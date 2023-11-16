@@ -39,6 +39,13 @@ public class BasicController {
         return "test success";
     }
 
+    @GetMapping("/test2")
+    @ResponseBody
+    public String test2() {
+        System.out.println("hello2");
+        return "test success 2";
+    }
+
     // http://127.0.0.1:8080/user
     @RequestMapping("/user")
     @ResponseBody
